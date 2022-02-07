@@ -1,0 +1,115 @@
+@media (max-width: 768px) {
+  body {
+    min-width: 432px;
+  }
+  main {
+    margin: 0;
+  }
+  h1 {
+    padding-left: 20px;
+  }
+  h1 + p {
+    padding-left: 20px;
+  }
+  .filters {
+    padding: 20px;
+  }
+
+  #logo {
+    width: 160px;
+    height: 70px;
+    margin: auto;
+    justify-content: center;
+  }
+  header {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav {
+    display: flex;
+    flex-basis: 100%;
+    border-bottom: 2px solid #f2f2f2;
+  }
+  nav a {
+    flex-basis: 50%;
+    text-align: center;
+  }
+  nav a:hover {
+    border-top: transparent;
+    border-bottom: 2px solid #0065fc;
+  }
+  .search {
+    display: flex;
+    padding: 0 20px;
+  }
+  form {
+    justify-content: space-between;
+    display: flex;
+    flex-basis: 100%;
+  }
+  input {
+    width: 100%;
+  }
+
+  .info {
+    padding-left: 20px;
+  }
+
+  #button span {
+    display: none;
+  }
+  #button .fas {
+    color: white;
+    font-size: large;
+    display: inline;
+  }
+  #button {
+    height: 50px;
+    width: 60px;
+    border-radius: 15px;
+    margin-left: -20px;
+  }
+  .filter {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 2px;
+  }
+  .popular {
+    flex-basis: 100%;
+    border-radius: 0%;
+  }
+
+  .cityPopular {
+    max-width: 100%;
+    min-width: 381px;
+  }
+  .city {
+    flex-basis: 100%;
+    background-color: white;
+  }
+  .hostCard {
+    flex-basis: 100%;
+    max-width: 600px;
+  }
+  .hostCard .description {
+    text-align: left;
+  }
+  .activity {
+    padding: 5%;
+  }
+  .activity h2 {
+    margin-left: 20px;
+  }
+  .activities {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    min-width: 400px;
+  }
+}

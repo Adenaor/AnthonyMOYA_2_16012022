@@ -1,0 +1,138 @@
+@media (max-width: 992px) {
+  #town {
+    flex-wrap: wrap-reverse;
+  }
+  .city {
+    flex-basis: 100%;
+    background-color: white;
+  }
+  .cityHost {
+    padding: 0 8%;
+  }
+  .popular {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    border-radius: 0;
+  }
+  .popularHost {
+    flex-basis: 100%;
+  }
+  .cityPopular {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cityPopular h2 {
+    flex-wrap: nowrap;
+    flex-basis: 100%;
+  }
+  .popularHostCard {
+    display: flex;
+  }
+  .imgBloc1,
+  .imgBloc3,
+  .imgsmall1,
+  .imgsmall2,
+  .imgmedium1,
+  .imgmedium2 {
+    height: 150px;
+    width: 100%;
+  }
+  .bloc1,
+  .bloc3,
+  .small1,
+  .small2,
+  .medium1,
+  .medium2 {
+    height: 200px;
+    width: 100%;
+    min-width: 320px;
+  }
+  .bloc2,
+  .bloc4 {
+    flex-direction: column;
+  }
+  .imgsmall1,
+  .imgmedium1 {
+    width: 100%;
+  }
+  .activities {
+    flex-direction: column;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .activity {
+    padding: 0 5%;
+  }
+  main {
+    margin: 0;
+  }
+  h1,
+  h1 + p,
+  .search,
+  .info,
+  .filters {
+    padding-left: 30px;
+  }
+  .city {
+    flex-basis: 100%;
+    background-color: white;
+  }
+  .popular {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: row;
+    border-radius: 0;
+  }
+  .popularHost {
+    flex-basis: 100%;
+  }
+  .cityPopular {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cityPopular h2 {
+    flex-wrap: nowrap;
+    flex-basis: 100%;
+  }
+  .popularHostCard {
+    display: flex;
+  }
+  .imgBloc1,
+  .imgBloc3,
+  .imgsmall1,
+  .imgsmall2,
+  .imgmedium1,
+  .imgmedium2 {
+    height: 150px;
+    width: 100%;
+  }
+  .bloc1,
+  .bloc3,
+  .small1,
+  .small2,
+  .medium1,
+  .medium2 {
+    height: 200px;
+    flex-basis: 100%;
+    min-width: 320px;
+    max-width: 700px;
+  }
+
+  .bloc2,
+  .bloc4 {
+    flex-direction: column;
+  }
+
+  .imgsmall1,
+  .imgmedium1 {
+    width: 100%;
+  }
+  .activities {
+    flex-direction: column;
+    padding: 10%;
+  }
+}

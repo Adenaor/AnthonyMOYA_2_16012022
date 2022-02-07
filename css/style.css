@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+main {
+  margin: 45px;
+}
+main p {
+  margin: 17px 0 17px 0;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.strong {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#logo {
+  height: 80px;
+  width: 200px;
+  padding-left: 60px;
+  margin-top: 30px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+/* -------------------------- NAV ------------------------ */
+nav a {
+  padding: 43px;
+}
+nav a:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+  font-weight: 500;
+}
+section {
+  margin-bottom: 50px;
+}
+/* -------------------- SEARCH ----------------------- */
+
+h1 {
+  font-size: 20px;
+  margin: 0;
+}
+p {
+  margin: 3% 0 3% 0;
+  font-size: 14px;
+}
+
+.search {
+  margin-bottom: 20px;
+  min-width: 330px;
+  display: flex;
+  flex-basis: 100%;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+  width: 380px;
+}
+.search .fas.fa-map-marker-alt {
+  background-color: #f2f2f2;
+  padding: 12px 15px 18px 15px;
+  border-radius: 15px 0 0 15px;
+  font-size: 20px;
+}
+.search input {
+  padding: 10px;
+  border: 1px solid #f2f2f2;
+  height: 50px;
+  width: 100%;
+}
+
+#button {
+  background-color: #0065fc;
+  border-radius: 0 15px 15px 0;
+  border: 1px solid #0065fc;
+  font-weight: 500;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#button span {
+  color: white;
+  font-weight: 500;
+  padding: 0 20px;
+}
+
+#button .fas {
+  display: none;
+}
+
+/* -------------------------- FILTER ------------------ */
+.filters h2 {
+  margin-right: 15px;
+  font-size: 18px;
+}
+.filters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.filterButton {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.filterList {
+  border: 3px solid #f2f2f2;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.filterList span {
+  margin: 0 20px;
+  font-weight: bold;
+}
+.filterList:hover {
+  transform: scale(1.03);
+  transition: 100ms ease-in-out;
+  background-color: #deebff;
+  box-shadow: 1px 3px 11px 1px #f2f2f2;
+  cursor: pointer;
+  border: 3px solid #deebff;
+}
+
+.filterList i {
+  color: #0065fc;
+  background-color: #deebff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -13px;
+}
+
+/* -------------------- INFO ------------------ */
+.info {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.info i {
+  color: #0065fc;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #f2f2f2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+}
+/* ------------------- HOST ------------------------- */
+#town {
+  display: flex;
+  flex-basis: 100%;
+  gap: 2%;
+}
+#town h2 {
+  font-size: 22px;
+}
+#town h3 {
+  margin: 0;
+}
+.city {
+  flex-basis: 66%;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  padding: 30px;
+}
+.cityHost {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.hostCard {
+  background-color: white;
+  border-radius: 15px;
+  width: 30%;
+  padding: 5px;
+  height: 230px;
+  box-shadow: 5px 5px 14px 3px rgba(0, 0, 0, 0.13);
+  min-width: 200px;
+}
+.hostCard:hover {
+  transform: scale(1.05);
+  transition: 0.4s ease-out;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  height: 90px;
+}
+.description p {
+  margin: 2% 0 3% 0;
+}
+
+.hostCard img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.hostCard .star {
+  color: #0065fc;
+  display: flex;
+  align-items: center;
+}
+.hostCard .star span {
+  color: #f2f2f2;
+}
+.addMore {
+  padding: 20px;
+}
+/* ------------------------------- POPULAR --------------------- */
+
+.popular {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+}
+.cityPopular {
+  flex-basis: 33%;
+  display: flex;
+  flex-flow: column;
+  gap: 25px;
+  padding: 30px;
+}
+#chart {
+  float: right;
+  font-size: x-large;
+}
+
+.popularHostCard {
+  background-color: white;
+  height: 150px;
+  border-radius: 15px;
+  padding: 5px;
+  display: flex;
+  box-shadow: 5px 5px 14px 3px rgba(0, 0, 0, 0.13);
+  width: 100%;
+  min-width: 250px;
+}
+.popularHostCard img {
+  width: 130px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+}
+.popularHostCard .description {
+  display: flex;
+  padding: 2%;
+  justify-content: space-between;
+}
+
+.popularHostCard .star {
+  color: #0065fc;
+}
+.popularHostCard .star span {
+  color: #f2f2f2;
+}
+.popularHostCard:hover {
+  transform: scale(1.05);
+  transition: 0.4s ease-out;
+}
+
+/* ---------------- ACTIVITY ------------------- */
+.activity {
+  flex-basis: 100%;
+  display: block;
+}
+.activities {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 16px;
+  flex-basis: 100%;
+}
+.activities h2 {
+  font-size: 22px;
+}
+.activities h3 {
+  background-color: white;
+  font-size: small;
+  margin: 20px;
+}
+
+.bloc2,
+.bloc4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px 0;
+  flex-basis: 25%;
+}
+
+.bloc1,
+.bloc3 {
+  box-shadow: 5px 5px 14px 3px rgba(0, 0, 0, 0.13);
+  border-radius: 15px;
+  flex-basis: 25%;
+}
+.blocInit,
+.blocEnd {
+  display: flex;
+  flex-direction: row;
+}
+.imgBloc1,
+.imgBloc3 {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 400px;
+}
+
+.imgBloc1 {
+  background-image: url(../images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+.imgBloc3 {
+  background-image: url(../images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+.imgmedium1 {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 200px;
+  background-image: url(../images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.imgsmall1 {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 100px;
+  background-image: url(../images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.imgsmall2 {
+  width: auto;
+  height: 180px;
+  background-image: url(../images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.imgmedium2 {
+  width: auto;
+  height: 120px;
+  background-image: url(../images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.small1,
+.small2,
+.medium1,
+.medium2 {
+  border-radius: 15px;
+  box-shadow: 5px 5px 14px 3px rgba(0, 0, 0, 0.13);
+}
+.imgsmall1,
+.imgsmall2,
+.imgmedium1,
+.imgmedium2 {
+  border-radius: 15px 15px 0 0;
+}
+
+.bloc1:hover {
+  transform: scale(1.05);
+  transition: 0.4s ease-out;
+}
+.bloc3:hover {
+  transform: scale(1.05);
+  transition: 0.4s ease-out;
+}
+.small1:hover {
+  transform: scale(1.05);
+  transition: 0.4s ease-out;
+}
+.small2:hover {
+  transform: scale(1.05);
+  transition: 0.4s ease-out;
+}
+.medium1:hover {
+  transform: scale(1.05);
+  transition: 0.4s ease-out;
+}
+.medium2:hover {
+  transform: scale(1.05);
+  transition: 0.4s ease-out;
+}
+/* --------------- FOOTER ----------------- */
+footer {
+  display: flex;
+  gap: 15%;
+  background-color: #f2f2f2;
+  padding: 30px;
+  overflow: hidden;
+}
+
+li span {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+li {
+  list-style-type: none;
+  margin-top: 10px;
+}
+/* ---------------------------- RESPONSIVE 4K-------------------- */
+@media (min-width: 2000px) {
+  main {
+    max-width: 2000px;
+    margin: auto;
+    justify-content: center;
+  }
+  #town {
+    display: flex;
+    justify-content: space-between;
+  }
+}
