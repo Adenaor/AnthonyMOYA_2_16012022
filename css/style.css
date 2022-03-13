@@ -302,7 +302,7 @@ form {
 .activities {
   display: flex;
   flex-wrap: nowrap;
-  gap: 3%;
+  gap: 4%;
   flex-basis: 100%;
 }
 .activities h2 {
